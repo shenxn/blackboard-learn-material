@@ -1,0 +1,21 @@
+.nav-link {
+  background: none !important;
+  border: none !important;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400 !important;
+  height: auto !important;
+  line-height: 64px;
+  outline: none !important;
+  padding: 0 15px;
+  position: static;
+  text-shadow: none !important;
+  width: auto !important;
+  &:hover {
+    background-color: rgba(0, 0, 0, .1) !important;
+  }
+  span {
+    border: none !important;
+    padding: 0 !important;
+  }
+}
