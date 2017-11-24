@@ -2665,41 +2665,70 @@ a {
   margin: 0;
 }
 
-.locationPane .filterBarHorizontal {
+.locationPane .filterBarHorizontal,
+.locationPane .localViewToggle {
   background-color: #eeeeee !important;
   height: auto;
   margin: 0 -12px;
   padding: 0 12px;
 }
 
-.locationPane .filterBarHorizontal #filterby {
+.locationPane .filterBarHorizontal #filterby,
+.locationPane .filterBarHorizontal ul,
+.locationPane .localViewToggle #filterby,
+.locationPane .localViewToggle ul {
+  box-shadow: none;
+  clear: both;
   display: block;
+  float: left;
   height: 48px;
   padding: 0;
 }
 
-.locationPane .filterBarHorizontal #filterby li {
+.locationPane .filterBarHorizontal #filterby li,
+.locationPane .filterBarHorizontal ul li,
+.locationPane .localViewToggle #filterby li,
+.locationPane .localViewToggle ul li {
   display: inline-block;
 }
 
-.locationPane .filterBarHorizontal #filterby li a {
+.locationPane .filterBarHorizontal #filterby li a,
+.locationPane .filterBarHorizontal ul li a,
+.locationPane .localViewToggle #filterby li a,
+.locationPane .localViewToggle ul li a {
   background: none;
   border: none;
   border-radius: 0;
   box-shadow: none;
   box-sizing: border-box;
+  color: #000;
   display: block;
   font-size: 14px;
+  font-weight: normal;
   height: 48px;
   line-height: 48px;
   min-width: 0;
   padding: 0 24px;
+  text-decoration: none;
   width: auto;
 }
 
-.locationPane .filterBarHorizontal #filterby li a.active {
+.locationPane .filterBarHorizontal #filterby li a.active,
+.locationPane .filterBarHorizontal ul li a.active,
+.locationPane .localViewToggle #filterby li a.active,
+.locationPane .localViewToggle ul li a.active {
   border: #000 solid !important;
   border-width: 0 0 2px 0 !important;
+}
+
+.locationPane .filterBarHorizontal #filterby li a:before, .locationPane .filterBarHorizontal #filterby li a:after,
+.locationPane .filterBarHorizontal ul li a:before,
+.locationPane .filterBarHorizontal ul li a:after,
+.locationPane .localViewToggle #filterby li a:before,
+.locationPane .localViewToggle #filterby li a:after,
+.locationPane .localViewToggle ul li a:before,
+.locationPane .localViewToggle ul li a:after {
+  display: none;
 }
 
 .locationPane .container {
@@ -2753,6 +2782,10 @@ a {
 .locationPane .container .calculatedRow {
   background: #f2f2f2;
   box-shadow: none;
+}
+
+.locationPane .container #announcementForm {
+  padding: 0 20px;
 }
 
 #copyright .newCopyright {
