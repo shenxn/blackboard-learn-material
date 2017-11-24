@@ -2388,9 +2388,66 @@ small {
   padding: 0 !important;
 }
 
+.card, #content .portlet {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.card h2, #content .portlet h2 {
+  background: none;
+  color: inherit;
+  font-size: 24px;
+  margin-bottom: 8px;
+  padding: 0;
+  text-shadow: none;
+}
+
+.card .collapsible, #content .portlet .collapsible {
+  border: none;
+  padding: 0;
+}
+
+.card .collapsible a, #content .portlet .collapsible a {
+  text-decoration: none !important;
+}
+
+.card .collapsible a span, #content .portlet .collapsible a span {
+  color: inherit !important;
+  font-size: 1rem;
+}
+
+.vertical-nav-link, .locationPane .navigationPane .navPaletteTitle, .locationPane .navigationPane .courseMenu a {
+  color: rgba(0, 0, 0, 0.87) !important;
+  font-size: 13px;
+  padding: 10px 30px;
+}
+
+.vertical-nav-link span, .locationPane .navigationPane .navPaletteTitle span, .locationPane .navigationPane .courseMenu a span {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.vertical-nav-link:hover, .locationPane .navigationPane .navPaletteTitle:hover, .locationPane .navigationPane .courseMenu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none !important;
+}
+
+.vertical-nav-link:hover span, .locationPane .navigationPane .navPaletteTitle:hover span, .locationPane .navigationPane .courseMenu a:hover span {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.box-shadow, .bgBanner, .locationPane .navigationPane {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 body {
   background: none;
   font-size: 15px !important;
+}
+
+a {
+  outline: none !important;
 }
 
 #quick_links_wrap {
@@ -2421,10 +2478,10 @@ body {
 .bgBanner {
   background-color: #ff9800 !important;
   background-image: none !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   height: auto;
   padding: 0 0.75rem;
+  z-index: 10;
 }
 
 .bgBanner a {
@@ -2434,6 +2491,10 @@ body {
 
 .bgBanner .tabWrapper-right {
   padding: 0 0.75rem !important;
+}
+
+.bgBanner .appTabs {
+  float: none !important;
 }
 
 .bgBanner .appTabs a {
@@ -2466,11 +2527,239 @@ body {
   display: none;
 }
 
-.appTabs {
-  float: none !important;
+.hideoff {
+  display: none;
 }
 
-.hideoff {
+.breadcrumbs {
+  background-color: #eeeeee !important;
+  border: none !important;
+  border-radius: 0;
+  font-size: 1.1rem;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 0 0 210px !important;
+  padding: 0 0.75rem !important;
+}
+
+.breadcrumbs .coursePath {
+  display: none;
+}
+
+.breadcrumbs ol {
+  padding: 0 15px;
+}
+
+#content {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+#content .contentBox {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#content .containerPortal {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.locationPane {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.locationPane .navigationPane {
+  height: 100% !important;
+  margin-top: -45px;
+  padding-bottom: 45px;
+  z-index: 9;
+}
+
+.locationPane .navigationPane .actionBarMicro {
+  display: none !important;
+}
+
+.locationPane .navigationPane .navPaletteTitle h3 {
+  width: 100%;
+  height: 100%;
+}
+
+.locationPane .navigationPane .navPaletteTitle h3 #courseMenu_combo {
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+
+.locationPane .navigationPane .navPaletteTitle .comboLink {
+  background: none;
+  color: rgba(0, 0, 0, 0.87) !important;
+  overflow: hidden;
+  padding: 0;
+}
+
+.locationPane .navigationPane .courseMenu a {
+  margin: 0 !important;
+}
+
+.locationPane .navigationPane .courseMenu .divider {
+  padding: 5px 0 !important;
+}
+
+.locationPane .navigationPane .courseMenu .divider hr {
+  display: none;
+}
+
+.locationPane .menuWrap {
+  border: none;
+  box-shadow: none;
+}
+
+.locationPane .menuWrap #puller {
+  display: none;
+}
+
+.locationPane .pageTitle {
+  display: none;
+}
+
+.locationPane #contentPanel .contentList {
+  margin: 0;
+}
+
+.locationPane #contentPanel .contentList li h3 {
+  font-size: 16px;
+}
+
+.locationPane #contentPanel .contentList li h3 span {
+  border: none !important;
+}
+
+.locationPane #contentPanel .contentList li .item {
+  padding: 0 0 5px 50px;
+}
+
+.locationPane #contentPanel .contentList li .details {
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 50px;
+}
+
+.locationPane #contentPanel .contentList li .details .contextItemDetailsHeaders {
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.locationPane #contentPanel .contentList li .details .contextItemDetailsHeaders .detailsValue {
+  margin: 0;
+}
+
+.locationPane #contentPanel .contentList li .details .contextItemDetailsHeaders .detailsValue ul {
+  margin: 0;
+}
+
+.locationPane #contentPanel .contentList li .details .vtbegenerated ul {
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.locationPane .filterBarHorizontal {
+  background-color: #eeeeee !important;
+  height: auto;
+  margin: 0 -12px;
+  padding: 0 12px;
+}
+
+.locationPane .filterBarHorizontal #filterby {
+  display: block;
+  height: 48px;
+  padding: 0;
+}
+
+.locationPane .filterBarHorizontal #filterby li {
+  display: inline-block;
+}
+
+.locationPane .filterBarHorizontal #filterby li a {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  min-width: 0;
+  padding: 0 24px;
+  width: auto;
+}
+
+.locationPane .filterBarHorizontal #filterby li a.active {
+  border: #000 solid !important;
+  border-width: 0 0 2px 0 !important;
+}
+
+.locationPane .container {
+  padding: 20px 0;
+}
+
+.locationPane .container .grades_header {
+  color: #000 !important;
+  font-weight: bold;
+  height: auto;
+  left: 0;
+  width: 100%;
+}
+
+.locationPane .container #grades_wrapper {
+  margin-top: 83px;
+}
+
+.locationPane .container .cell {
+  font-size: 1rem !important;
+  height: auto;
+  padding: 15px 5px;
+}
+
+.locationPane .container .cell a {
+  font-size: .9rem !important;
+}
+
+.locationPane .container .cell div, .locationPane .container .cell span {
+  margin-top: 5px;
+}
+
+.locationPane .container .cell .activityType,
+.locationPane .container .cell .itemCat {
+  font-size: .8rem;
+}
+
+.locationPane .container .cell.grade span, .locationPane .container .cell.grade div {
+  font-size: .9rem;
+  margin-top: 3px;
+}
+
+.locationPane .container .cell.grade .itemStats div {
+  font-size: .8rem;
+}
+
+.locationPane .container .cell .eval-links input {
+  font-size: .8rem;
+}
+
+.locationPane .container .calculatedRow {
+  background: #f2f2f2;
+  box-shadow: none;
+}
+
+#copyright .newCopyright {
+  padding: 5px 0;
+}
+
+#copyright .newCopyright .logo {
   display: none;
 }
  
