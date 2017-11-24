@@ -264,18 +264,20 @@ a {
       width: 100%;
     }
     #grades_wrapper {
-      margin-top: 83px;
+      margin-top: 73px;
     }
     .cell {
       font-size: 1rem !important;
       height: auto;
-      padding: 15px 5px;
+      padding: 10px 10px;
       a {
         font-size: .9rem !important;
+        overflow: visible;
       }
       div, span {
         margin-top: 5px;
       }
+      .lastActivityDate,
       .activityType,
       .itemCat {
         font-size: .8rem;
@@ -300,6 +302,7 @@ a {
     .calculatedRow {
       background: #f2f2f2;
       box-shadow: none;
+      padding: 5px 0;
     }
     #announcementForm {
       padding: 0 20px;

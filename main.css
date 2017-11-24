@@ -2748,23 +2748,25 @@ a {
 }
 
 .locationPane .container #grades_wrapper {
-  margin-top: 83px;
+  margin-top: 73px;
 }
 
 .locationPane .container .cell {
   font-size: 1rem !important;
   height: auto;
-  padding: 15px 5px;
+  padding: 10px 10px;
 }
 
 .locationPane .container .cell a {
   font-size: .9rem !important;
+  overflow: visible;
 }
 
 .locationPane .container .cell div, .locationPane .container .cell span {
   margin-top: 5px;
 }
 
+.locationPane .container .cell .lastActivityDate,
 .locationPane .container .cell .activityType,
 .locationPane .container .cell .itemCat {
   font-size: .8rem;
@@ -2786,6 +2788,7 @@ a {
 .locationPane .container .calculatedRow {
   background: #f2f2f2;
   box-shadow: none;
+  padding: 5px 0;
 }
 
 .locationPane .container #announcementForm {
