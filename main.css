@@ -2550,6 +2550,10 @@ a {
   padding: 0 15px;
 }
 
+.breadcrumbs ol li {
+  display: block;
+}
+
 #content {
   border: none !important;
   box-shadow: none !important;

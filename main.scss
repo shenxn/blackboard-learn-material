@@ -101,6 +101,9 @@ a {
   }
   ol {
     padding: 0 15px;
+    li {
+      display: block;
+    }
   }
 }
 #content {
